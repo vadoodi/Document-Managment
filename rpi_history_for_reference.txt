@@ -1,0 +1,89 @@
+    1  id
+    2  apt-get install golang
+    3  clear
+    4  apt-get install apache2
+    5  apt-get install git
+    6  vim /etc/apache2/apache2.conf 
+    7  apachectl service restart
+    8  apachectl restart service
+    9  apachectl restart
+   10  vim /etc/apache2/apache2.conf 
+   11  apachectl restart
+   12  apt-get install mysql
+   13  apt-get install mariadb-server
+   14  servcie mysql start
+   15  mysql_secure_installation 
+   16  mysql
+   17  mysql -u root
+   18  cd /var/www/html/
+   19  git
+   20  git clone https://github.com/zomoeini/Document-Managment.git
+   21  ll
+   22  mv Document-Managment/ docs
+   23  ll
+   24  cd docs/
+   25  ll
+   26  apt-get install php
+   27  apt install curl php-cli php-mbstring git unzip
+   28  cd ~
+   29  curl -sS https://getcomposer.org/installer -o composer-setup.php
+   30  php -r "if (hash_file('SHA384', 'composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+   31  HASH=544e09ee996cdf60ece3804abc52599c22b1f40f4323403c44d44fdfdd586475ca9813a858088ffbc1f233e9b180f061
+   32  php -r "if (hash_file('SHA384', 'composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+   33  ls
+   34  curl -sS https://getcomposer.org/installer -o composer-setup.php
+   35  ls
+   36  php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+   37  composer
+   38  cd /var/www/
+   39  cd html/
+   40  cd docs/
+   41  ll
+   42  vom .env
+   43  vim .env
+   44  rm -rf public/.htaccess 
+   45  composer require symfony/orm-pack
+   46  apt-get install php-mysql
+   47  composer require symfony/orm-pack
+   48  apt-get install symfony
+   49  curl -sS https://get.symfony.com/cli/installer | bash
+   50  composer require symfony/orm-pack
+   51  exit
+   52  mysql
+   53  exit
+   54  ll
+   55  cd documents/
+   56  ll
+   57  vim _form.html.twig 
+   58  vim show.html.twig 
+   59  cd ..
+   60  ll
+   61  cd .
+   62  ll
+   63  cd ..
+   64  ll
+   65  cd config/
+   66  ll
+   67  vim services.yaml 
+   68  grep 'toolbar' *.*
+   69  cd packages/
+   70  ll
+   71  grep 'toolbar' *.*
+   72  grep -rn 'toolbar' *.*
+   73  cd ..
+   74  ll
+   75  cd ..
+   76  ll
+   77  grep -rn 'toolbar' *.*
+   78  grep -rn 'toolbar' *
+   79  grep -rn 'toolbar:' *
+   80  vim config/packages/dev/web_profiler.yaml 
+   81  git status
+   82  git branch
+   83  git checkout -D rpi
+   84  git checkout -d rpi
+   85  git checkout -b rpi
+   86  git status
+   87  git add *
+   88  git status
+   89  history > rpi_history_for_reference.txt

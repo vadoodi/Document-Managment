@@ -22,6 +22,13 @@
             </tr>
         </tbody>
     </table>
+    <h2>Files</h2><br>
+  	{% for file in document.files %}
+	<div>
+   		<a href="{{ asset('http://10.0.0.167/docs/public/uploads/'~ file.title) }}" target="_blank"><img src="{{ asset('http://10.0.0.167/docs/public/uploads/'~ file.title) }}" alt="Image" class="img-thumbnail" style="height: 200px"></a><br>
+   		{# <a href="{{ path('documents_delete_file', {id: file.id})}}" data-delete data-token="{{ csrf_token('delete' ~ file.id )}}">Delete</a>#}
+	</div>
+	{% endfor %}
 
     <a class="btn btn-primary" href="{{ path('documents_index') }}">back to list</a>
 
